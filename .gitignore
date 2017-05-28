@@ -1,6 +1,3 @@
-/.idea/
-*.lock
-*.log
 /client/uploads/
-phpwebim.rar
-phpwebim.zip
+composer.lock
+*.log

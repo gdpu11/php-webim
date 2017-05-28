@@ -5,9 +5,9 @@ $config['server'] = array(
     //监听的端口
     'port'   => '9503',
     //WebSocket的URL地址，供浏览器使用的
-    'url'    => 'ws://test.swoole.cn:9503',
+    'url'    => 'ws://im:liiking.com:9503',
     //用于Comet跨域，必须设置为html所在的URL
-    'origin' => 'http://test.swoole.cn:8888',
+    'origin' => 'http://im:liiking.com:8888',
 );
 
 $config['swoole'] = array(

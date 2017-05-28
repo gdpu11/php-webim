@@ -22,7 +22,6 @@ class Redis
         $this->redis->set(self::$prefix.'client_'.$client_id, serialize($info));
         $this->redis->sAdd(self::$prefix.'online', $client_id);
     }
-
     function logout($client_id)
     {
         $this->redis->del(self::$prefix.'client_', $client_id);
