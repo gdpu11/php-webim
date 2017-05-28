@@ -9,7 +9,6 @@ $serv->set(array(
 $serv->on('connect', function ($serv, $fd, $from_id){
     echo "[#".posix_getpid()."]\tClient@[$fd:$from_id]: Connect.\n";
 });
-
 $serv->on('receive', function (swoole_server $serv, $fd, $from_id, $data) {
     echo "[#".posix_getpid()."]\tClient[$fd]: $data\n";
     $serv->send($fd, "<cross-domain-policy>
